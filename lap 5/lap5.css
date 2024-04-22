@@ -1,0 +1,36 @@
+#gallery {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+}
+
+#photoArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px; 
+    padding: 10px;
+}
+
+
+.photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease, box-shadow 0.3s ease; 
+    cursor: pointer;
+    border-radius: 8px; 
+}
+
+.photo:hover {
+    box-shadow: 0 0 20px rgba(168, 19, 19, 0.2); 
+}
+
+.zoom {
+    transform: scale(2.0); 
+    z-index: 10; 
+    position: relative; 
+}
